@@ -1,4 +1,7 @@
+<!-- (keyup.enter)="enterPress(txtSearch.value)" -->
+
 <input type="text" class="form-control" 
 placeholder="{{placeholder}}"
-(keyup.enter)="enterPress(txtSearch.value)"
-#txtSearch>
+#txtSearch
+(keyup)="onKeyPress(txtSearch.value)"
+[value]="initialValue">
